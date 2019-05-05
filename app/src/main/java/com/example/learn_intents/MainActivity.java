@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity{
 
                 Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:kishansinghverma@gmail.com"));
                 intent.putExtra(Intent.EXTRA_SUBJECT, "Test Subject");
+                Toast.makeText(MainActivity.this, Intent.EXTRA_SUBJECT, Toast.LENGTH_SHORT).show();
                 intent.putExtra("body", "This is a test Mail!");
                 startActivity(intent);
             }
