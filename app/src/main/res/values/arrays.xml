@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list">
+        <item>SMS</item>
+        <item>Mail</item>
+        <item>Call</item>
+        <item>Browser</item>
+    </string-array>
+</resources>
